@@ -1,5 +1,5 @@
 [ {
   "op": "add",
   "path": "/renderParameters/radiantLight",
-  "value": [124, 124, 86]
+  "value": [77, 46, 46]
 } ]
