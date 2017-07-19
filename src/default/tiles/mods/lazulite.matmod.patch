@@ -1,0 +1,11 @@
+[
+  {
+    "op": "add",
+    "path": "/renderParameters/radiantLight",
+    "value": [
+      76,
+      81,
+      114
+    ]
+  }
+]
