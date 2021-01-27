@@ -3,9 +3,9 @@
     "op": "add",
     "path": "/renderParameters/radiantLight",
     "value": [
-      92,
-      102,
-      128
+      106,
+      90,
+      104
     ]
   }
 ]
