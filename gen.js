@@ -77,24 +77,24 @@ for(var setting in settings) {
 	}
 }
 
-function generate(ore, cfg, setting) {
+function generate(_ore, _cfg, _setting) {
 
-	var convert = function(color, setting) {
-		return Math.max(0, Math.min(255, Math.floor(color * settings[setting])));
+	var convert = function(color, __setting) {
+		return Math.max(0, Math.min(255, Math.floor(color * settings[__setting])));
 	}
 
 	const patch = [
 		{
 			"op": "add",
-		  	"path": "/renderParameters/radiantLight",
-		  	"value": [convert(cfg.color[0], setting), convert(cfg.color[1], setting), convert(cfg.color[2], setting)],
+        "path": "/renderParameters/radiantLight",
+        "value": [convert(_cfg.color[0], _setting), convert(_cfg.color[1], _setting), convert(_cfg.color[2], _setting)],
 		}];
 
-	fs.writeFile("./src/" + setting + "/tiles/mods/" + ore + ".matmod.patch", JSON.stringify(patch, null, 2), 'utf8', function (err) {
-	    if (err) {
-	        return console.log(err);
-	    }
-	    else console.log('- ' + setting + ': ' + ore);
+	fs.writeFile("./src/" + _setting + "/tiles/mods/" + _ore + ".matmod.patch", JSON.stringify(patch, null, 2), 'utf8', function (err) {
+      if (err) {
+          return console.log(err);
+      }
+      else console.log('- ' + _setting + ': ' + _ore);
 	});
 
 }
