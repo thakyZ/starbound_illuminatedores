@@ -47,7 +47,10 @@ const cfg = {
 	'sulphur': 			{ color: [124, 124, 86] },
 	'thorium':			{ color: [46, 51, 64] },
 	'xithricite': 		{ color: [46, 51, 64] },
-	'zerchesium': 		{ color: [46, 51, 64] },
+	'zerchesium': 		{ color: [53, 45, 52] },
+  "sivite":         { color: [73, 80, 119] },
+  "nocxium":        { color: [45, 124, 38] },
+  "koanite":        { color: [45, 80, 103] },
 
 	'ise4amethyst': 	{ color: [64, 46, 51] },
 	'ise4electrum': 	{ color: [64, 64, 46] },
