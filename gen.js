@@ -90,7 +90,7 @@ function generate(_ore, _cfg, _setting) {
         "value": [convert(_cfg.color[0], _setting), convert(_cfg.color[1], _setting), convert(_cfg.color[2], _setting)],
 		}];
 
-	fs.writeFile("./src/" + _setting + "/tiles/mods/" + _ore + ".matmod.patch", JSON.stringify(patch, null, 2), 'utf8', function (err) {
+	fs.writeFile("./src/" + _setting + "/tiles/mods/" + _ore + ".matmod.patch", JSON.stringify(patch, null, 2).replace(/\n/g, "\r\n"), 'utf8', function (err) {
       if (err) {
           return console.log(err);
       }
